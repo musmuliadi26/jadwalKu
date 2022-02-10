@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>JadwalKu</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-3" href="#">JadwalKu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><h3><i class="bi bi-brightness-high-fill"></i></h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- form input Jadwal -->
+    <section id="form-input-jadwal">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-jadwal-baru">Buat Jadwal Baru</button>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="modal-jadwal-baru" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Buat Jadwal Baru</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="judulJadwal" class="form-label">Judul Jadwal :</label>
+                    <input type="text" class="form-control" id="judulJadwal">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-secondary">Buat Jadwal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end form input jadwal -->
+
+    <!-- Jadwal List -->
+    <section id="notes-list">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-header text-center"><h4>Jadwal Tugas</h4></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h5>Aplikasi web(Pemrograman web 1)</h5>
+                  <h5>01/02/2022 23:59</h5>
+                  <div class="justify-content-between d-flex">
+                    <div>
+                      <h5>Sisa Waktu: 00d:23h:56s</h5>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <h5>Aplikasi C++(Pemrograman terstruktur)</h5>
+                  <p class="text-secondary">Membuat aplikasi Penjualan tiket kereta api dengan C++</p>
+                  <h5>03/02/2022 20:59</h5>
+                  <div class="justify-content-between d-flex">
+                    <div>
+                      <h5>Sisa Waktu: 05d:12h:08s</h5>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalTugas">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-header text-center"><h4>Jadwal Belajar</h4></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h5>Bahasa Inggris(duoLinggo)</h5>
+                  <div class="text-end">
+                    <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <h5>Javascript(yt WPU)</h5>
+                  <div class="text-end">
+                    <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <h5>Sass(yt WPU)</h5> 
+                  <div class="text-end">
+                    <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <h5>GO lang(yt PZN)</h5>
+                  <div class="text-end">
+                    <button type="button" class="btn btn-secondary btn-sm">Hapus</button>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalBelajar">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header text-center"><h4>Jadwal UAS</h4></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">...</li>
+              </ul>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalUAS">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal">
+
+        <div class="modal fade" id="modal-jadwalTugas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Jadwal Tugas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="judul" class="form-label">Judul Jadwal :</label>
+                    <input type="text" class="form-control" id="judul">
+                  </div>
+                  <div class="mb-3">
+                    <label for="floatingTextarea">Deskripsi(Opsional) :</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Tambahkan Tanggal</label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <fieldset >
+                    <input type="datetime-local" class="form-control" id="judul">
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modal-jadwalBelajar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Jadwal Belajar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="judul" class="form-label">Judul Jadwal :</label>
+                    <input type="text" class="form-control" id="judul">
+                  </div>
+                  <div class="mb-3">
+                    <label for="floatingTextarea">Deskripsi(Opsional) :</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Tambahkan Tanggal</label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <fieldset >
+                    <input type="datetime-local" class="form-control" id="judul">
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modal-jadwalUAS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Jadwal UAS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="judul" class="form-label">Judul Jadwal :</label>
+                    <input type="text" class="form-control" id="judul">
+                  </div>
+                  <div class="mb-3">
+                    <label for="floatingTextarea">Deskripsi(Opsional) :</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Tambahkan Tanggal</label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <fieldset >
+                    <input type="datetime-local" class="form-control" id="judul">
+                    </fieldset>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Tambah Jadwal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- end Jadwal List -->
+
+    <!-- navbar -->
+    <div id="footer">
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col text-center">
+            <p>©2022 | <a  class="text-decoration-none text-dark" href=""><i class="bi bi-github"></i> Musmuliadi</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- My Script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

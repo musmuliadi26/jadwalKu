@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+#form-input-jadwal{
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+}
+#notes-list{
+	padding-bottom: 6rem;
+}
