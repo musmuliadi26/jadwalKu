@@ -52,16 +52,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form>
+                <form id="formJadwalBaru">
                   <div class="mb-3">
                     <label for="judulJadwal" class="form-label">Judul Jadwal :</label>
-                    <input type="text" class="form-control" id="judulJadwal">
+                    <input type="text" class="form-control" id="judulJadwal" required>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-secondary">Buat Jadwal</button>
                   </div>
                 </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button type="button" class="btn btn-secondary">Buat Jadwal</button>
               </div>
             </div>
           </div>
@@ -71,10 +71,10 @@
     <!-- end form input jadwal -->
 
     <!-- Jadwal List -->
-    <section id="notes-list">
+    <section id="jadwal-list">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 mb-3">
+        <div id="jadwalListBody" class="row justify-content-center">
+          <!-- <div class="col-md-6 mb-3">
             <div class="card">
               <div class="card-header text-center"><h4>Jadwal Tugas</h4></div>
               <ul class="list-group list-group-flush">
@@ -142,23 +142,23 @@
                 <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalBelajar">Tambah Jadwal</button>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header text-center"><h4>Jadwal UAS</h4></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">...</li>
-              </ul>
-              <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalUAS">Tambah Jadwal</button>
+            </div> -->
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header text-center"><h4>Jadwal UAS</h4></div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">...</li>
+                </ul>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-jadwalUAS">Tambah Jadwal</button>
+                  <button type="button" class="btn btn-secondary btn-sm">Hapus jadwal</button>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
       <div id="modal">
-
         <div class="modal fade" id="modal-jadwalTugas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -267,7 +267,6 @@
           </div>
         </div>
 
-
       </div>
     </section>
     <!-- end Jadwal List -->
@@ -278,7 +277,7 @@
         <hr>
         <div class="row">
           <div class="col text-center">
-            <p>©2022 | <a  class="text-decoration-none text-dark" href=""><i class="bi bi-github"></i> Musmuliadi</a></p>
+            <p>©2022 | <a  class="text-decoration-none text-dark" href="https://github.com/musmuliadi26" target="_blank"><i class="bi bi-github"></i> Musmuliadi</a></p>
           </div>
         </div>
       </div>
